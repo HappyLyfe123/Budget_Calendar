@@ -22,7 +22,7 @@ public class Budget_Calendar extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("SignInPage.fxml"));
         
         Scene scene = new Scene(root);
-        
+        stage.setTitle("D.O.T INC.");
         stage.setScene(scene);
         stage.show();
     }

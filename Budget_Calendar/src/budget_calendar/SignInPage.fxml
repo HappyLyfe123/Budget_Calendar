@@ -5,7 +5,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="budget_calendar.Signin_Controller">
    <children>
       <VBox layoutX="72.0" layoutY="99.0" prefHeight="119.0" prefWidth="456.0">
          <children>
@@ -41,7 +41,18 @@
             <Label alignment="CENTER" prefHeight="48.0" prefWidth="150.0" text="Create Account" textAlignment="CENTER" />
          </children>
       </HBox>
-      <Button layoutX="72.0" layoutY="293.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="456.0" text="Sign-In" />
-      <Label alignment="CENTER" layoutX="261.0" layoutY="218.0" text="Invalid email or password" textFill="RED" visible="false" />
+      <Button layoutX="72.0" layoutY="293.0" mnemonicParsing="false" onAction="#signinBTNClick" prefHeight="54.0" prefWidth="456.0" text="Sign-In">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Label fx:id="error_label" alignment="CENTER" layoutX="261.0" layoutY="218.0" text="Invalid email or password" textFill="RED" visible="false">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Label layoutX="226.0" layoutY="14.0" text="Welcome">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
