@@ -1,4 +1,8 @@
-
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package budget_calendar;
 
 import javafx.application.Application;
@@ -15,7 +19,7 @@ public class Budget_Calendar extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("Sign_In_Page.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("SignInPage.fxml"));
         
         Scene scene = new Scene(root);
         
@@ -23,6 +27,9 @@ public class Budget_Calendar extends Application {
         stage.show();
     }
 
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
         launch(args);
     }

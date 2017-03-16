@@ -5,7 +5,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="385.0" prefWidth="600.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="budget_calendar.GUI.SignInController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <VBox layoutX="72.0" layoutY="99.0" prefHeight="119.0" prefWidth="456.0">
          <children>
@@ -17,7 +17,7 @@
                      </font>
                   </Label>
                   <Pane prefHeight="39.0" prefWidth="67.0" />
-                  <TextField fx:id="user_email_text_box" prefHeight="39.0" prefWidth="332.0" />
+                  <TextField prefHeight="39.0" prefWidth="332.0" />
                </children>
             </HBox>
             <Pane prefHeight="35.0" prefWidth="412.0" />
@@ -29,18 +29,19 @@
                      </font>
                   </Label>
                   <Pane prefHeight="39.0" prefWidth="23.0" />
-                  <PasswordField fx:id="user_password" prefHeight="39.0" prefWidth="332.0" />
+                  <PasswordField prefHeight="39.0" prefWidth="332.0" />
                </children>
             </HBox>
          </children>
       </VBox>
-      <HBox layoutX="194.0" layoutY="231.0" prefHeight="48.0" prefWidth="332.0">
+      <HBox layoutX="196.0" layoutY="245.0" prefHeight="48.0" prefWidth="332.0">
          <children>
             <Label alignment="CENTER" prefHeight="48.0" prefWidth="150.0" text="Forgot password?" textAlignment="CENTER" />
             <Separator orientation="VERTICAL" prefHeight="48.0" prefWidth="39.0" />
             <Label alignment="CENTER" prefHeight="48.0" prefWidth="150.0" text="Create Account" textAlignment="CENTER" />
          </children>
       </HBox>
-      <Button layoutX="72.0" layoutY="304.0" mnemonicParsing="false" onAction="#signInBTNPress" prefHeight="54.0" prefWidth="456.0" text="Sign-In" />
+      <Button layoutX="72.0" layoutY="293.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="456.0" text="Sign-In" />
+      <Label alignment="CENTER" layoutX="261.0" layoutY="218.0" text="Invalid email or password" textFill="RED" visible="false" />
    </children>
-</fx:root>
+</AnchorPane>
