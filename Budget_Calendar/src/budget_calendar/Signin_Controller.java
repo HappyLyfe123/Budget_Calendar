@@ -10,8 +10,13 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.stage.Stage;
 
 /**
  *
@@ -24,7 +29,13 @@ public class Signin_Controller implements Initializable{
     
     @FXML
     private void signinBTNClick(ActionEvent event) throws IOException{
-        error_label.setVisible(true);
+        Parent calendar_view_parent = FXMLLoader.load(getClass().getResource("Calendar_View.fxml"));
+        Scene calendar_view_scence = new Scene(calendar_view_parent);
+        Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        app_stage.close();
+        app_stage.setScene(calendar_view_scence);
+        app_stage.setTitle("Calendar");
+        app_stage.show();
     }
 
     @Override
