@@ -38,7 +38,7 @@
          <children>
             <Label alignment="CENTER" prefHeight="48.0" prefWidth="150.0" text="Forgot password?" textAlignment="CENTER" />
             <Separator orientation="VERTICAL" prefHeight="48.0" prefWidth="39.0" />
-            <Label alignment="CENTER" prefHeight="48.0" prefWidth="150.0" text="Create Account" textAlignment="CENTER" />
+            <Label alignment="CENTER" onMouseClicked="#createAccountLabelClick" prefHeight="48.0" prefWidth="150.0" text="Create Account" textAlignment="CENTER" />
          </children>
       </HBox>
       <Button layoutX="72.0" layoutY="293.0" mnemonicParsing="false" onAction="#signinBTNClick" prefHeight="54.0" prefWidth="456.0" text="Sign-In">

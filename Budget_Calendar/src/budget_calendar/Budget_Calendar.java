@@ -19,7 +19,7 @@ public class Budget_Calendar extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("SignInPage.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("SignIn_Page.fxml"));
         
         Scene scene = new Scene(root);
         stage.setTitle("D.O.T INC.");
