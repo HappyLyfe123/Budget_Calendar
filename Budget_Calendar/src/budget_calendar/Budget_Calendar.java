@@ -107,5 +107,12 @@ public class Budget_Calendar extends Application {
         }//end try
         return is_Correct;
     }
-
+    
+    public static void createAccountDB(String first_name, String last_name, String email_address, String password){
+        
+    }
+    
+    public static void setIncomeToDB(int income_amount){
+        
+    }
 }
