@@ -38,15 +38,21 @@ public class Signin_Controller implements Initializable{
     
     @FXML
     private void signinBTNClick(ActionEvent event) throws IOException{
+        email_address = email_address_textFild.getText();
+        password = password_passwordfield.getText();
         
-        
-        Parent calendar_view_parent = FXMLLoader.load(getClass().getResource("Calendar_View.fxml"));
-        Scene calendar_view_scence = new Scene(calendar_view_parent);
-        Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        app_stage.close();
-        app_stage.setScene(calendar_view_scence);
-        app_stage.setTitle("Calendar");
-        app_stage.show();
+        if(Budget_Calendar.logIn(email_address, password)){
+            Parent calendar_view_parent = FXMLLoader.load(getClass().getResource("Calendar_View.fxml"));
+            Scene calendar_view_scence = new Scene(calendar_view_parent);
+            Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            app_stage.close();
+            app_stage.setScene(calendar_view_scence);
+            app_stage.setTitle("Calendar");
+            app_stage.show();
+        }
+        else{
+            error_label.setVisible(true);
+        }
     }
     
     @FXML

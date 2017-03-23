@@ -17,7 +17,7 @@
                      </font>
                   </Label>
                   <Pane prefHeight="39.0" prefWidth="67.0" />
-                  <TextField prefHeight="39.0" prefWidth="332.0">
+                  <TextField fx:id="email_address_textFild" prefHeight="39.0" prefWidth="332.0">
                      <font>
                         <Font size="14.0" />
                      </font></TextField>
@@ -32,7 +32,7 @@
                      </font>
                   </Label>
                   <Pane prefHeight="39.0" prefWidth="23.0" />
-                  <PasswordField prefHeight="39.0" prefWidth="332.0">
+                  <PasswordField fx:id="password_passwordfield" prefHeight="39.0" prefWidth="332.0">
                      <font>
                         <Font size="14.0" />
                      </font></PasswordField>
