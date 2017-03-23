@@ -17,7 +17,10 @@
                      </font>
                   </Label>
                   <Pane prefHeight="39.0" prefWidth="67.0" />
-                  <TextField prefHeight="39.0" prefWidth="332.0" />
+                  <TextField prefHeight="39.0" prefWidth="332.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextField>
                </children>
             </HBox>
             <Pane prefHeight="35.0" prefWidth="412.0" />
@@ -29,16 +32,25 @@
                      </font>
                   </Label>
                   <Pane prefHeight="39.0" prefWidth="23.0" />
-                  <PasswordField prefHeight="39.0" prefWidth="332.0" />
+                  <PasswordField prefHeight="39.0" prefWidth="332.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font></PasswordField>
                </children>
             </HBox>
          </children>
       </VBox>
       <HBox layoutX="196.0" layoutY="245.0" prefHeight="48.0" prefWidth="332.0">
          <children>
-            <Label alignment="CENTER" prefHeight="48.0" prefWidth="150.0" text="Forgot password?" textAlignment="CENTER" />
+            <Label alignment="CENTER" prefHeight="48.0" prefWidth="150.0" text="Forgot password?" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
             <Separator orientation="VERTICAL" prefHeight="48.0" prefWidth="39.0" />
-            <Label alignment="CENTER" onMouseClicked="#createAccountLabelClick" prefHeight="48.0" prefWidth="150.0" text="Create Account" textAlignment="CENTER" />
+            <Label alignment="CENTER" onMouseClicked="#createAccountLabelClick" prefHeight="48.0" prefWidth="150.0" text="Create Account" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
          </children>
       </HBox>
       <Button layoutX="72.0" layoutY="293.0" mnemonicParsing="false" onAction="#signinBTNClick" prefHeight="54.0" prefWidth="456.0" text="Sign-In">

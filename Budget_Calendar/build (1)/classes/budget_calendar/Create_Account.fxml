@@ -16,7 +16,7 @@
             </Label>
          </top>
          <center>
-            <GridPane prefHeight="439.0" prefWidth="802.0" BorderPane.alignment="CENTER">
+            <GridPane prefHeight="291.0" prefWidth="826.0" BorderPane.alignment="CENTER">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
               </columnConstraints>
@@ -31,15 +31,27 @@
                      <children>
                         <VBox prefHeight="100.0" prefWidth="330.0">
                            <children>
-                              <Label text="First Name" />
-                              <TextField prefHeight="39.0" prefWidth="289.0" />
+                              <Label prefHeight="34.0" prefWidth="122.0" text="First Name">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></Label>
+                              <TextField fx:id="first_name_textfield" prefHeight="30.0" prefWidth="326.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></TextField>
                            </children>
                         </VBox>
                         <Region prefHeight="100.0" prefWidth="179.0" />
                         <VBox prefHeight="94.0" prefWidth="330.0">
                            <children>
-                              <Label text="Last Name" />
-                              <TextField />
+                              <Label prefHeight="34.0" prefWidth="122.0" text="Last Name">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></Label>
+                              <TextField fx:id="last_name_textfield" prefHeight="30.0" prefWidth="326.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></TextField>
                            </children>
                         </VBox>
                      </children>
@@ -48,22 +60,40 @@
                      <children>
                         <VBox prefHeight="68.0" prefWidth="913.0">
                            <children>
-                              <Label text="Email" />
-                              <TextField prefHeight="39.0" prefWidth="489.0" />
+                              <Label prefHeight="34.0" prefWidth="168.0" text="Email">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></Label>
+                              <TextField fx:id="emial_text_field" prefHeight="30.0" prefWidth="826.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></TextField>
                            </children>
                         </VBox>
                      </children>
                   </HBox>
                   <VBox prefHeight="68.0" prefWidth="913.0" GridPane.rowIndex="2">
                      <children>
-                        <Label text="Password" />
-                        <TextField prefHeight="39.0" prefWidth="489.0" />
+                        <Label prefHeight="34.0" prefWidth="149.0" text="Password">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                        <PasswordField fx:id="password_passwordfield" prefHeight="30.0" prefWidth="826.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font></PasswordField>
                      </children>
                   </VBox>
-                  <VBox prefHeight="68.0" prefWidth="913.0" GridPane.rowIndex="3">
+                  <VBox prefHeight="21.0" prefWidth="723.0" GridPane.rowIndex="3">
                      <children>
-                        <Label text="Re-Password" />
-                        <TextField prefHeight="39.0" prefWidth="489.0" />
+                        <Label prefHeight="34.0" prefWidth="149.0" text="Re-Password">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                        <PasswordField fx:id="re_password_passwordfield" prefHeight="30.0" prefWidth="826.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font></PasswordField>
                      </children>
                   </VBox>
                </children>
@@ -74,7 +104,7 @@
          <children>
             <Button mnemonicParsing="false" onAction="#cancelBTNClick" prefHeight="81.0" prefWidth="207.0" text="Cancel" />
             <Region prefHeight="54.0" prefWidth="94.0" />
-            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="206.0" text="Submit" />
+            <Button mnemonicParsing="false" onAction="#submitBTNClick" prefHeight="54.0" prefWidth="206.0" text="Submit" />
          </children>
       </HBox>
    </children>
