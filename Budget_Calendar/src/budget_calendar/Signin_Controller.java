@@ -56,6 +56,13 @@ public class Signin_Controller implements Initializable{
     }
     
     @FXML
+    private void textFieldAndPasswordField(MouseEvent event){
+        if(error_label.isVisible()){
+            error_label.setVisible(false);
+        }
+    }
+    
+    @FXML
     private void createAccountLabelClick(MouseEvent event) throws IOException{
         Parent create_account_label_parent = FXMLLoader.load(getClass().getResource("Create_Account.fxml"));
         Scene create_account_label_scence = new Scene(create_account_label_parent);

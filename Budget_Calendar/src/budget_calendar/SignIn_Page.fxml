@@ -9,7 +9,7 @@
    <children>
       <VBox layoutX="72.0" layoutY="99.0" prefHeight="119.0" prefWidth="456.0">
          <children>
-            <HBox prefHeight="39.0" prefWidth="445.0">
+            <HBox onMouseClicked="#textFieldAndPasswordField" prefHeight="39.0" prefWidth="445.0">
                <children>
                   <Label alignment="CENTER" text="Email" textAlignment="RIGHT">
                      <font>
@@ -17,7 +17,7 @@
                      </font>
                   </Label>
                   <Pane prefHeight="39.0" prefWidth="67.0" />
-                  <TextField fx:id="email_address_textFild" prefHeight="39.0" prefWidth="332.0">
+                  <TextField fx:id="email_address_textFild" onMouseClicked="#textFieldAndPasswordField" prefHeight="39.0" prefWidth="332.0">
                      <font>
                         <Font size="14.0" />
                      </font></TextField>
@@ -32,7 +32,7 @@
                      </font>
                   </Label>
                   <Pane prefHeight="39.0" prefWidth="23.0" />
-                  <PasswordField fx:id="password_passwordfield" prefHeight="39.0" prefWidth="332.0">
+                  <PasswordField fx:id="password_passwordfield" onMouseClicked="#textFieldAndPasswordField" prefHeight="39.0" prefWidth="332.0">
                      <font>
                         <Font size="14.0" />
                      </font></PasswordField>

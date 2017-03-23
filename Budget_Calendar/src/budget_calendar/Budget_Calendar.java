@@ -85,7 +85,7 @@ public class Budget_Calendar extends Application {
             
         } catch (SQLException se) {
             //Handle errors for JDBC
-            se.printStackTrace();
+            //se.printStackTrace();
         } catch (Exception e) {
             //Handle errors for Class.forName
             e.printStackTrace();
