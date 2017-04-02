@@ -53,5 +53,17 @@ public class Create_Account_Controller {
         email_address = emial_text_field.getText();
         password = password_passwordfield.getText();
         re_password = re_password_passwordfield.getText();
+        
+        if(valdiateEmail(email_address) && validatePassword(password, re_password)){
+            
+        }
+    }
+    
+    private static boolean valdiateEmail(String email_address){     
+        return email_address.contains("@");
+    }
+    
+    private static boolean validatePassword(String password, String re_password){
+        return password.trim().length() > 7 && password.trim().length() < 21 && password.trim().equals(re_password.trim());
     }
 }
